@@ -65,13 +65,14 @@ missionStatement: "Through hard work, bold action, and a focus on helping others
 registerToVote: 'https://sos.tn.gov/products/elections/register-vote'
 }
 
-const changeDistrict = (objectToChange, propertyToChange, value) => {
-     objectToChange[propertyToChange] = value;
+const changePoliticiacn = (propertyToChange, value) => {
+     ElizabetheSanger[propertyToChange] = value;
 }
-console.log(changeDistrict(ElizabetheSanger,'congressionalDistrict', '10'));
+changePoliticiacn('congressionalDistrict', '10');
+console.log(ElizabetheSanger);
 
-const changePlatformsStatements = (objectToChange, propertyToChange, value) => {
-    objectToChange.platformStatements[propertyToChange] = value;
+const changePlatformsStatements = (propertyToChange, nestedPropertyToChange, value) => {
+    ElizabetheSanger[propertyToChange][nestedpropertyToChange] = value;
 }
 
 //let lizArticle = document.createElement('article')
