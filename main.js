@@ -72,8 +72,11 @@ changePoliticiacn('congressionalDistrict', '10');
 console.log(ElizabetheSanger);
 
 const changePlatformsStatements = (propertyToChange, nestedPropertyToChange, value) => {
-    ElizabetheSanger[propertyToChange][nestedpropertyToChange] = value;
+    ElizabetheSanger[propertyToChange][nestedPropertyToChange] = value;
+    console.log(ElizabetheSanger);
 }
+changePlatformsStatements("platformStatements", "taxes", "I will increase taxes!")
+
 
 //let lizArticle = document.createElement('article')
 //lizArticle.setAttribute('id', ElizabetheSanger.congressionalDistrict)
